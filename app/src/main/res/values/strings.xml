@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ময়মনসিংহ গাইড</string>
+    <string name="no_net">
+        দুঃখিত !!!\nইন্টারনেট ছাড়া আপনাকে তথ্য দেখাতে পারছি না\n\n
+        অনুগ্রহপূর্বক ইন্টারনেট সংযোগ চালু করুন
+    </string>
+</resources>

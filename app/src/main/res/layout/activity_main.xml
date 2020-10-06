@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/mainHolder"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ময়মনসিংহ গাইড"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:padding="5dp"
+            android:fontFamily="sans-serif"
+            android:textColor="#FF0000"
+            android:gravity="center_horizontal"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#A3A3A3"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <!-- code for 1st box-->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@drawable/background"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="250dp">
+
+                     <!--first row-->
+                    <LinearLayout
+                        android:layout_marginTop="40dp"
+                        android:weightSum="3"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/emergencyID"
+                            android:background="@drawable/background01"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/emergency"
+                                />
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000000"
+                                android:text="জরুরী"
+                                android:gravity="center_horizontal" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/doctorID"
+                            android:background="@drawable/background01"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/medical"
+                                />
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000000"
+                                android:text=" ডাক্তার "
+                                android:gravity="center_horizontal" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/bankID"
+                            android:background="@drawable/background01"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/bank"
+                                />
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000000"
+                                android:text=" ব্যাংক "
+                                android:gravity="center_horizontal" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#FF8888"/>
+
+                    <!--2nd row-->
+                    <LinearLayout
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="30dp"
+                        android:weightSum="3"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/famousFoodID"
+                            android:background="@drawable/background01"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/ic_feeder"
+                                />
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000000"
+                                android:text="বিখ্যাত খাবার"
+                                android:gravity="center_horizontal" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/famousPlaceID"
+                            android:background="@drawable/background01"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/place"
+                                />
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000000"
+                                android:text="দর্শনীয় স্থান"
+                                android:gravity="center_horizontal" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:background="@drawable/background01"
+                            android:id="@+id/travelID"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/travel"
+                                />
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000000"
+                                android:text=" ভ্রমণ  "
+                                android:gravity="center_horizontal" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+                <!-- code for 2nd box-->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@drawable/background"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="250dp">
+
+                    <!--1st row-->
+                    <LinearLayout
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:weightSum="3"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/educationID"
+                            android:background="@drawable/background01"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/education"
+                                />
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000000"
+                                android:text="শিক্ষা"
+                                android:gravity="center_horizontal" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:background="@drawable/background01"
+                            android:id="@+id/hotelID"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/ic_hotel"
+                                />
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000000"
+                                android:text="হোটেল"
+                                android:gravity="center_horizontal" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:background="@drawable/background01"
+                            android:id="@+id/fastfoodID"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/ic_fork"
+                                />
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000000"
+                                android:text="ফাস্ট ফুড"
+                                android:gravity="center_horizontal" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#FF8888"/>
+
+                    <!--2nd row-->
+                    <LinearLayout
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="30dp"
+                        android:weightSum="3"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <LinearLayout
+                            android:background="@drawable/background01"
+                            android:id="@+id/shoppingID"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/ic_shopping_bag"
+                                />
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000000"
+                                android:text="কেনা কাটা"
+                                android:gravity="center_horizontal" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/developerID"
+                            android:background="@drawable/background01"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/dev"
+                                />
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000000"
+                                android:text="ডেভেলপার"
+                                android:gravity="center_horizontal" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/aboutID"
+                            android:background="@drawable/background01"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/about_info"
+                                />
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000000"
+                                android:text="অ্যাপ সম্পর্কে"
+                                android:gravity="center_horizontal" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/exitID"
+        android:background="#FDFDFD"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:background="@drawable/background"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/leaveSMSID"
+                        android:textSize="15sp"
+                        android:fontFamily="monospace"
+                        android:textColor="#8E8E8E"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="অ্যাপ থেকে চলে যেতে চান ?"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:weightSum="2"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/yesTextID"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        android:background="@drawable/background"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="হ্যাঁ"
+                        android:textColor="#FF0000"
+                        />
+
+                    <TextView
+                        android:id="@+id/noTextID"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        android:background="@drawable/background"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="না"
+                        android:textColor="#4CAF50"
+                        />
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
