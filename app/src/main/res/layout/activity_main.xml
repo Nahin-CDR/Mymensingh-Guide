@@ -4,14 +4,13 @@
     android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#FFFFFF"
+    android:background="@color/white"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
 
 
     <LinearLayout
-        android:visibility="gone"
         android:id="@+id/mainHolder"
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -385,7 +384,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:textColor="#000000"
-                                android:text="কেনা কাটা"
+                                android:text="কেনাকাটা"
                                 android:gravity="center_horizontal" />
                         </LinearLayout>
 
@@ -456,6 +455,7 @@
 
 
     <LinearLayout
+        android:visibility="gone"
         android:id="@+id/exitID"
         android:background="#FDFDFD"
         android:weightSum="2"
@@ -484,7 +484,7 @@
                     />
                 <TextView
                     android:textAlignment="center"
-                    android:textColor="#000000"
+                    android:textColor="#757575"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/rating"
@@ -526,10 +526,10 @@
                         android:orientation="horizontal">
                         <TextView
                             android:id="@+id/leaveSMSID"
-                            android:textSize="18sp"
+                            android:textSize="20sp"
                             android:layout_marginTop="10dp"
                             android:fontFamily="monospace"
-                            android:textColor="#000000"
+                            android:textColor="#F44336"
                             android:layout_gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -548,12 +548,14 @@
                         android:layout_height="match_parent">
 
                         <TextView
+                            android:textSize="15sp"
                             android:id="@+id/yesTextID"
                             android:layout_margin="5dp"
                             android:padding="10dp"
                             android:background="@drawable/background"
                             android:layout_gravity="center"
                             android:gravity="center"
+                            android:textStyle="bold"
                             android:layout_weight="1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -562,6 +564,8 @@
                             />
 
                         <TextView
+                            android:textSize="15sp"
+                            android:textStyle="bold"
                             android:id="@+id/noTextID"
                             android:layout_margin="5dp"
                             android:padding="10dp"

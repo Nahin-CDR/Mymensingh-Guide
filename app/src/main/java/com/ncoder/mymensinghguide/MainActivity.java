@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     Intent intent = new Intent(getApplicationContext(),Emergency.class);
                     startActivity(intent);
-                    overridePendingTransition(R.anim.slider_1,R.anim.slider_2);
+                    overridePendingTransition(R.anim.home_slider_1,R.anim.home_slider_6);
                     finish();
                 }
                 else
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     Intent intent = new Intent(getApplicationContext(),TravelSection.class);
                     startActivity(intent);
-                    overridePendingTransition(R.anim.slider_1,R.anim.slider_2);
+                    overridePendingTransition(R.anim.home_slider_1,R.anim.home_slider_6);
                     finish();
                 }
                 else
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     Intent intent = new Intent(getApplicationContext(),Doctor.class);
                     startActivity(intent);
-                    overridePendingTransition(R.anim.slider_1,R.anim.slider_2);
+                    overridePendingTransition(R.anim.home_slider_1,R.anim.home_slider_6);
                     finish();
                 }
                 else
@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     Intent intent = new Intent(getApplicationContext(),BankSection.class);
                     startActivity(intent);
-                    overridePendingTransition(R.anim.slider_1,R.anim.slider_2);
+                    overridePendingTransition(R.anim.home_slider_1,R.anim.home_slider_6);
                     finish();
                 }
                 else
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     Intent intent = new Intent(getApplicationContext(),FamousFood.class);
                     startActivity(intent);
-                    overridePendingTransition(R.anim.slider_1,R.anim.slider_2);
+                    overridePendingTransition(R.anim.home_slider_1,R.anim.home_slider_6);
                     finish();
                 }
                 else
@@ -135,7 +135,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     Intent intent = new Intent(getApplicationContext(),FamousPlace.class);
                     startActivity(intent);
-                    overridePendingTransition(R.anim.slider_1,R.anim.slider_2);
+                    overridePendingTransition(R.anim.home_slider_1,R.anim.home_slider_6);
                     finish();
                 }
                 else
@@ -155,7 +155,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     Intent intent = new Intent(getApplicationContext(),EducationSection.class);
                     startActivity(intent);
-                    overridePendingTransition(R.anim.slider_1,R.anim.slider_2);
+                    overridePendingTransition(R.anim.home_slider_1,R.anim.home_slider_6);
                     finish();
                 }
                 else
@@ -174,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     Intent intent = new Intent(getApplicationContext(),HotelSection.class);
                     startActivity(intent);
-                    overridePendingTransition(R.anim.slider_1,R.anim.slider_2);
+                    overridePendingTransition(R.anim.home_slider_1,R.anim.home_slider_6);
                     finish();
                 }
                 else
@@ -192,7 +192,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     Intent intent = new Intent(getApplicationContext(),FastFoodsection.class);
                     startActivity(intent);
-                    overridePendingTransition(R.anim.slider_1,R.anim.slider_2);
+                    overridePendingTransition(R.anim.home_slider_1,R.anim.home_slider_6);
                     finish();
                 }
                 else
@@ -211,7 +211,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     Intent intent = new Intent(getApplicationContext(),ShoppingSection.class);
                     startActivity(intent);
-                    overridePendingTransition(R.anim.slider_1,R.anim.slider_2);
+                    overridePendingTransition(R.anim.home_slider_1,R.anim.home_slider_6);
                     finish();
                 }
                 else
@@ -229,7 +229,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     Intent intent = new Intent(getApplicationContext(),AboutSection.class);
                     startActivity(intent);
-                    overridePendingTransition(R.anim.slider_1,R.anim.slider_2);
+                    overridePendingTransition(R.anim.home_slider_1,R.anim.home_slider_6);
                     finish();
                 }
                 else
@@ -305,7 +305,7 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     ActivityCompat.finishAffinity(MainActivity.this);
-                    overridePendingTransition(R.anim.slider_1,R.anim.slider_2);
+                    overridePendingTransition(R.anim.home_slider_1,R.anim.home_slider_5);
                     finish();
                 }
             });

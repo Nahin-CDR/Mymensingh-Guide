@@ -58,15 +58,12 @@ public class BankSection extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bank_section);
         Objects.requireNonNull(getSupportActionBar()).hide();
-
         //code for initializing loading layout
         loadingGif = findViewById(R.id.gif_loadingID);
         live =findViewById(R.id.gif_liveID);
         noNetLayout = findViewById(R.id.noInternetID);
         webLayout = findViewById(R.id.WebViewLayoutID);
-
         webLayout.setVisibility(View.VISIBLE);
-
 
 
         /* code for continuously checking internet connection starts*/
@@ -96,10 +93,6 @@ public class BankSection extends AppCompatActivity {
 
 
 
-
-
-
-
         //code for back button
         btn=findViewById(R.id.backButton);
         btn.setOnClickListener(new View.OnClickListener() {
@@ -117,8 +110,6 @@ public class BankSection extends AppCompatActivity {
                         Toast.makeText(BankSection.this, "সংযোগ বিচ্ছিন্ন হয়ে গেছে !!", Toast.LENGTH_SHORT).show();
 
                     }
-
-
                 }else {
 
                     if(isNetworkConnected())
@@ -133,7 +124,6 @@ public class BankSection extends AppCompatActivity {
                     {
                         live.setVisibility(View.GONE);
                         Toast.makeText(BankSection.this, "সংযোগ বিচ্ছিন্ন হয়ে গেছে !!", Toast.LENGTH_SHORT).show();
-
                     }
                 }
             }
@@ -161,10 +151,6 @@ public class BankSection extends AppCompatActivity {
         webSettings.setAppCacheEnabled(true);
         wb.setWebChromeClient(new MyChrome());
 
-
-
-
-
         //location starts
         wb.getSettings().setGeolocationEnabled(true);
         wb.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
@@ -174,7 +160,6 @@ public class BankSection extends AppCompatActivity {
                 Manifest.permission.ACCESS_FINE_LOCATION,
                 Manifest.permission.ACCESS_COARSE_LOCATION
         },0);
-
 
 
 
@@ -189,10 +174,6 @@ public class BankSection extends AppCompatActivity {
                 wb.loadUrl(url);
                 return true;
             }
-
-
-
-
             public void onReceivedError(WebView view, int errorCode, String description, String failingUrl){
                 wb.loadUrl("file:///android_asset/error_banking.html");
                 Toast.makeText(BankSection.this, "সংযোগ বিচ্ছিন্ন হয়ে গেছে !!", Toast.LENGTH_SHORT).show();

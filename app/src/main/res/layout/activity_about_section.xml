@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@color/white"
     android:orientation="vertical"
     tools:context=".AboutSection">
 
@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:hint="@string/app_name"
+            android:hint="অ্যাপ সম্পর্কে"
             android:gravity="center"
             android:textColor="#FF001D"
             android:textSize="15dp" />
