@@ -17,10 +17,10 @@ public class MainActivity extends AppCompatActivity {
 
     
     LinearLayout emergency,travel,doctor,bank,food,place,education,hotel,fastFood,shopping,about,developer;
-
     LinearLayout holderLayout,ExitScreen;
-
     TextView yes,no;
+    LinearLayout giveRatingLayout;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -262,6 +262,30 @@ public class MainActivity extends AppCompatActivity {
 
         yes = findViewById(R.id.yesTextID);
         no = findViewById(R.id.noTextID);
+
+        giveRatingLayout = findViewById(R.id.giveRatingID);
+        giveRatingLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (isNetworkConnected())
+                {
+
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData( Uri.parse("https://play.google.com/store/apps/details?id=com.ncoder.mymensinghguide"));
+                    intent.setPackage("com.android.vending");
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.myanim2,R.anim.slider_2);
+                }
+                else
+                {
+                    Toast.makeText(MainActivity.this, "ইন্টারনেট সংযোগ নেই !", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+
+
     }
 
 
